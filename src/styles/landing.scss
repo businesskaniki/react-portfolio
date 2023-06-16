@@ -1,0 +1,244 @@
+$colorPalette1: rgba(241, 29, 91, 1);
+$colorPalette2: rgba(241, 29, 91, 0.8);
+$text: rgba(2, 2, 2, 1);
+$textColor: rgba(210, 210, 210, 1);
+$gradient: rgba(255, 255, 255, 1);
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(255, 253, 253);
+  background: linear-gradient(90deg, $gradient 0%, $textColor 100%);
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 10vw;
+  text-align: end;
+  z-index: 10;
+
+  p {
+    padding: 0;
+    margin: 0 1vw;
+    letter-spacing: 0.3rem;
+    font-size: 16px;
+  }
+
+  h1 {
+    --color-primary: rgba(241, 29, 91, 0.8);
+    --color-secondary: rgba(241, 29, 91, 0.6);
+    --color-tertiary: rgba(241, 29, 91, 0.4);
+    --color-quaternary: rgba(241, 29, 91, 0.2);
+    --color-quinary: rgba(241, 29, 91, 0.1);
+
+    font-size: 68px;
+    font-weight: 500;
+    margin: 0 1vw;
+    color: $colorPalette1;
+    padding: 0;
+    line-height: 68px;
+    letter-spacing: 0.3rem;
+    -webkit-box-reflect: below -23px linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    display: inline-block;
+    opacity: 0;
+    text-shadow:
+      1px 1px 0 var(--color-secondary),
+      1px 1px 0 var(--color-tertiary),
+      1px 1px var(--color-quaternary),
+      1px 1px 0 var(--color-quinary);
+    filter: blur(4px);
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0), shadows 1.2s ease-in 2.5s infinite, move 1.2s ease-in 2.5s infinite;
+
+    @keyframes fade-in {
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    @keyframes shadows {
+      0% {
+        text-shadow: none;
+      }
+
+      10% {
+        text-shadow: 1px 1px 0 var(--color-secondary);
+      }
+
+      20% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary);
+      }
+
+      30% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary),
+          2px 2px var(--color-quaternary);
+      }
+
+      40% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary),
+          2px 2px var(--color-quaternary),
+          3px 3px 0 var(--color-quinary);
+      }
+
+      50% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary),
+          2px 2px var(--color-quaternary),
+          3px 3px 0 var(--color-quinary);
+      }
+
+      60% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary),
+          2px 2px var(--color-quaternary),
+          3px 3px 0 var(--color-quinary);
+      }
+
+      70% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary),
+          2px 2px var(--color-quaternary);
+      }
+
+      80% {
+        text-shadow:
+          1px 1px 0 var(--color-secondary),
+          2px 2px 0 var(--color-tertiary);
+      }
+
+      90% {
+        text-shadow: 1px 1px 0 var(--color-secondary);
+      }
+
+      100% {
+        text-shadow: none;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      40% {
+        transform: translate(-3px, -3px);
+      }
+
+      50% {
+        transform: translate(-3px, -3px);
+      }
+
+      60% {
+        transform: translate(-3px, -3px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 300;
+    margin: 0 1vw;
+    padding: 0;
+    letter-spacing: 0.3rem;
+    background: #121fcf;
+    background: linear-gradient(to left, $text 0%, $colorPalette1 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a {
+    margin: auto 10px auto auto;
+  }
+
+  button {
+    margin: auto 10px auto auto;
+    padding: 2%;
+    width: 15vw;
+    height: 7vh;
+    background-color: $colorPalette2;
+    border: none;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    border-radius: 40px;
+    letter-spacing: 0.3rem;
+    box-shadow: 3px 4px 3px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 3px 4px 3px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px 4px 3px 0 rgba(0, 0, 0, 0.35);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: $colorPalette1;
+    transform: scale(1.05);
+    transition: 0.4s ease-out;
+  }
+
+  button:active {
+    transform: scale(0.99);
+    transition: 0.4s ease-in;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+    margin: auto;
+
+    p {
+      margin: 10vh 0 2vh 0;
+      letter-spacing: 0.2rem;
+      font-size: 20px;
+    }
+
+    h1 {
+      letter-spacing: 0.2rem;
+      font-size: 54px;
+      line-height: 36px;
+      margin: auto 0;
+    }
+
+    h6 {
+      letter-spacing: 0.2rem;
+      font-size: 20px;
+      line-height: 36px;
+      margin: 2vh 0 5vh 0;
+    }
+
+    button {
+      margin: auto;
+      width: 50vw;
+    }
+  }
+}
+
+.animate {
+  animation-duration: 2s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

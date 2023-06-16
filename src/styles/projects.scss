@@ -1,0 +1,246 @@
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
+
+$colorPalette1: rgba(241, 29, 91, 1);
+$textColor: rgba(240, 240, 240, 1);
+$backGround: rgba(5, 6, 9, 0.99);
+$backGroundGradient: rgba(5, 6, 9, 0.8);
+$backgroundCard: rgba(150, 150, 150, 0.5);
+
+.projects {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: $backGround;
+  background: linear-gradient(270deg, $backGroundGradient 0%, $backGround 100%);
+}
+
+.grid {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10vw;
+  grid-row-gap: 5vh;
+  margin: 15vh auto auto auto;
+}
+
+.container .card {
+  margin: auto;
+  position: relative;
+  width: 30vw;
+  height: 37vh;
+  background: rgba(255, 255, 255, 0.027);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: $colorPalette1;
+  clip-path: circle(10px at 100% 5%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.05);
+  border-radius: 30px;
+}
+
+.container .card:hover::before {
+  clip-path: circle(50px at 50% -20%);
+  transition: 1s ease-in-out;
+  transform: scale(1.1);
+}
+
+.container .card::after {
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 25, 0.05);
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 20%;
+  transition: 1s;
+}
+
+.container .card .imgBx .projectIcon {
+  transition: 1s;
+}
+
+.container .card:hover .imgBx {
+  top: 14%;
+}
+
+.container .card:hover .imgBx .projectIcon {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  color: $textColor;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 1vw;
+  padding: 0;
+  line-height: 68px;
+  letter-spacing: 0.3rem;
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx h2 {
+  color: $colorPalette1;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+.container .card .contentBx .technology {
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .technology {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .technology h3 {
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $textColor;
+  margin: 0 1vw;
+  line-height: 18px;
+  letter-spacing: 0.3rem;
+}
+
+.container .card .contentBx .technology span {
+  width: 20%;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: $colorPalette1;
+  background: #fff;
+  margin: 20px 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+.container .card .contentBx .technology span:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.container .card .contentBx .links a {
+  color: $colorPalette1;
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx .links a {
+  margin: 0 10px;
+}
+
+.container .card:hover .contentBx .links a .linkIcons {
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx .links a .linkIcons:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-column-gap: 5vw;
+    grid-row-gap: 0;
+  }
+
+  .container {
+    .card {
+      width: 44vw;
+      height: 35vh;
+      margin: auto;
+
+      .imgBx {
+        margin-top: -2px;
+      }
+
+      .contentBx {
+        margin-top: -50px;
+
+        h2 {
+          font-size: 12px;
+        }
+
+        .technology {
+          h3 {
+            display: none;
+          }
+
+          span:nth-of-type(1),
+          span:nth-of-type(2) {
+            width: 40%;
+          }
+
+          span:nth-of-type(3) {
+            display: none;
+          }
+        }
+
+        .links a .linkIcons {
+          margin-top: 20px;
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    .card:hover .contentBx h2 {
+      color: $colorPalette1;
+      font-weight: 700;
+      transition: 0.5s;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+$colorPalette1: rgba(241, 29, 91, 1);
+
+.loader {
+  height: 20vh;
+  width: 20%;
+  padding: 1em;
+  margin: 30vh auto;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 20vh 0;
+    font-family: 'Gill Sans', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 24px;
+    color: $colorPalette1;
+  }
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

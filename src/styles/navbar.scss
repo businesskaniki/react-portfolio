@@ -1,0 +1,75 @@
+$textColor: rgba(242, 239, 234, 1);
+$backgroundColor: rgba(5, 6, 9, 1);
+$colorPalette1: rgba(241, 29, 91, 1);
+$colorPalette2: rgba(241, 29, 91, 0.7);
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  flex-direction: row;
+  margin: 20px 0;
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+
+  .linksList {
+    margin: auto auto;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.nav a {
+  border-radius: 4px;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: $colorPalette2;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  transition: 0.75s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  .navIcon {
+    margin: auto 10px;
+  }
+
+  p {
+    opacity: 0;
+    transition: 0.75s ease-in-out;
+  }
+}
+
+.nav a:hover {
+  margin: 0 1vw;
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+}
+
+.nav a.active {
+  margin: 0 3vw;
+  padding: 10px 0;
+  color: $colorPalette1;
+  transform: scale(2);
+  transition: 0.5s ease-in-out;
+
+  p {
+    opacity: 1;
+    margin: 0 auto;
+    font-size: 10px;
+    transition: 0.75s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav a {
+    padding: 10px 5px;
+
+    .navIcon {
+      margin: 0 20px;
+    }
+  }
+}
