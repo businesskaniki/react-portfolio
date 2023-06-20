@@ -1,21 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
-import React from 'react';
-import Modal from 'react-modal';
-import HorizontalSplitIcon from '@mui/icons-material/HorizontalSplit';
-import CloseIcon from '@mui/icons-material/Close';
-import '../styles/about.scss';
-import TechStack from '../components/TechStack';
+import React from 'react'
+import Modal from 'react-modal'
+import HorizontalSplitIcon from '@mui/icons-material/HorizontalSplit'
+import CloseIcon from '@mui/icons-material/Close'
+import '../styles/about.scss'
+import TechStack from '../components/TechStack'
 
-function About() {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+function About () {
+  const [modalIsOpen, setIsOpen] = React.useState(false)
 
-  function openModal() {
-    setIsOpen(true);
+  function openModal () {
+    setIsOpen(true)
   }
 
-  function closeModal() {
-    setIsOpen(false);
+  function closeModal () {
+    setIsOpen(false)
   }
 
   return (
@@ -25,7 +25,7 @@ function About() {
         <ul>
           <li>
             <p>
-              I am currently a pationate Frontend Developer, with a keen eye for detail and love for creativity.
+              I am  a pationate Frontend Developer, with a keen eye for detail and love for creativity.
             </p>
           </li>
           <li>
@@ -70,7 +70,7 @@ function About() {
         <TechStack />
       </Modal>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

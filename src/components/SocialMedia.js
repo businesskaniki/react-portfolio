@@ -1,12 +1,12 @@
-import React from 'react';
-import Tooltip from '@mui/material/Tooltip';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ListAltIcon from '@mui/icons-material/ListAlt';
-import Fade from '@mui/material/Fade';
+import React from 'react'
+import Tooltip from '@mui/material/Tooltip'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import ListAltIcon from '@mui/icons-material/ListAlt'
+import Fade from '@mui/material/Fade'
 
-function SocialMedia() {
+function SocialMedia () {
   return (
     <ul className="contactsList">
       <li>
@@ -74,7 +74,7 @@ function SocialMedia() {
         </a>
       </li>
     </ul>
-  );
+  )
 }
 
-export default SocialMedia;
+export default SocialMedia

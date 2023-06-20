@@ -1,13 +1,13 @@
-import React from 'react';
-import '../styles/projects.scss';
-import TransformOutlinedIcon from '@mui/icons-material/TransformOutlined';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
-import LaunchIcon from '@mui/icons-material/Launch';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import React from 'react'
+import '../styles/projects.scss'
+import TransformOutlinedIcon from '@mui/icons-material/TransformOutlined'
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch'
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates'
+import RestaurantIcon from '@mui/icons-material/Restaurant'
+import LaunchIcon from '@mui/icons-material/Launch'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
-function Projects() {
+function Projects () {
   return (
     <div className="projects animate">
       <div className="grid">
@@ -19,7 +19,7 @@ function Projects() {
             <div className="contentBx">
               <h2>Gericht</h2>
               <div className="technology">
-                <h3>Technology:</h3>
+                <h3>Is a full stack react and node restaurant app that advertises a restaurant</h3>
                 <span>React</span>
                 <span>Node</span>
                 <span>SCSS</span>
@@ -33,7 +33,7 @@ function Projects() {
                   <LaunchIcon className="linkIcons" />
                 </a>
                 <a
-                  href="https://github.com/NicholasMaina/restaurant-app"
+                  href="https://github.com/businesskaniki/mtc"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -51,7 +51,7 @@ function Projects() {
             <div className="contentBx">
               <h2>Picture Perfect</h2>
               <div className="technology">
-                <h3>Technology:</h3>
+                <h3>Is a website to showcase the work of a photographer</h3>
                 <span>React</span>
                 <span>Node</span>
                 <span>Express</span>
@@ -65,7 +65,7 @@ function Projects() {
                   <LaunchIcon className="linkIcons" />
                 </a>
                 <a
-                  href="https://github.com/NicholasMaina/my-images"
+                  href="https://github.com/businesskaniki/social"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -83,21 +83,21 @@ function Projects() {
             <div className="contentBx">
               <h2>Kenyan Creatives</h2>
               <div className="technology">
-                <h3>Technology:</h3>
+                <h3>This is a developer prtfolio to showcase devs works</h3>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JS</span>
               </div>
               <div className="links">
                 <a
-                  href="https://NicholasMaina.github.io/Kenyan-Creative---Microverse-Capstone-Project/public/index.html"
+                  href="https://businesskaniki.github.io/portfolio/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <LaunchIcon className="linkIcons" />
                 </a>
                 <a
-                  href="https://github.com/NicholasMaina/Kenyan-Creative---Microverse-Capstone-Project"
+                  href="https://github.com/businesskaniki/portfolio"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -115,7 +115,7 @@ function Projects() {
             <div className="contentBx">
               <h2>Space Travellers Hub</h2>
               <div className="technology">
-                <h3>Technology:</h3>
+                <h3>is a react project for booking space shuttles</h3>
                 <span>React</span>
                 <span>Redux</span>
                 <span>SCSS</span>
@@ -129,7 +129,7 @@ function Projects() {
                   <LaunchIcon className="linkIcons" />
                 </a>
                 <a
-                  href="https://github.com/NicholasMaina/space-travelers-hub"
+                  href="https://github.com/businesskaniki/spacex"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -141,7 +141,7 @@ function Projects() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Projects;
+export default Projects

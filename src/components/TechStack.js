@@ -1,22 +1,22 @@
-import React from 'react';
-import Tooltip from '@mui/material/Tooltip';
-import Fade from '@mui/material/Fade';
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import Tailwind from '../assets/tailwind.png';
-import Bootstrap from '../assets/bootstrap.png';
-import Sass from '../assets/sass.png';
-import JavaScript from '../assets/java-script.png';
-import Ruby from '../assets/diamond.png';
-import Git from '../assets/git.png';
-import GitHub from '../assets/github.png';
-import ReactIcon from '../assets/react.png';
-import ROR from '../assets/ror.png';
-import SQLIcon from '../assets/sql.png';
-import Redux from '../assets/redux.png';
-import VScode from '../assets/vscode.png';
+import React from 'react'
+import Tooltip from '@mui/material/Tooltip'
+import Fade from '@mui/material/Fade'
+import HTML from '../assets/html.png'
+import CSS from '../assets/css.png'
+import Tailwind from '../assets/tailwind.png'
+import Bootstrap from '../assets/bootstrap.png'
+import Sass from '../assets/sass.png'
+import JavaScript from '../assets/java-script.png'
+import Ruby from '../assets/diamond.png'
+import Git from '../assets/git.png'
+import GitHub from '../assets/github.png'
+import ReactIcon from '../assets/react.png'
+import ROR from '../assets/ror.png'
+import SQLIcon from '../assets/sql.png'
+import Redux from '../assets/redux.png'
+import VScode from '../assets/vscode.png'
 
-function TechStack() {
+function TechStack () {
   return (
     <div className="techStack">
       <div className="div1 animate glow delay-1">
@@ -161,7 +161,7 @@ function TechStack() {
       </div>
       <div className="div15 animate glow delay-15" />
     </div>
-  );
+  )
 }
 
-export default TechStack;
+export default TechStack

@@ -4,19 +4,19 @@ export const particlesConfig = {
       value: 80,
       density: {
         enable: true,
-        value_area: 1000,
-      },
+        value_area: 1000
+      }
     },
     color: {
-      value: '#e61684',
+      value: '#e61684'
     },
     shape: {
       type: 'circle',
       image: {
         src: 'img/github.svg',
         width: 10,
-        height: 10,
-      },
+        height: 10
+      }
     },
     opacity: {
       value: 0.6,
@@ -25,8 +25,8 @@ export const particlesConfig = {
         enable: false,
         speed: 1,
         opacity_min: 0.1,
-        sync: false,
-      },
+        sync: false
+      }
     },
     size: {
       value: 3,
@@ -35,15 +35,15 @@ export const particlesConfig = {
         enable: true,
         speed: 40,
         size_min: 3,
-        sync: false,
-      },
+        sync: false
+      }
     },
     line_linked: {
       enable: true,
       distance: 30,
       color: '#c82323',
       opacity: 0.8,
-      width: 1,
+      width: 1
     },
     move: {
       enable: true,
@@ -54,50 +54,50 @@ export const particlesConfig = {
       out_mode: 'bounce',
       bounce: true,
       attract: {
-        enable: true,
-      },
-    },
+        enable: true
+      }
+    }
   },
   interactivity: {
     detect_on: 'window',
     events: {
       onhover: {
         enable: true,
-        mode: 'repulse',
+        mode: 'repulse'
       },
       onclick: {
         enable: true,
-        mode: 'push',
+        mode: 'push'
       },
-      resize: true,
+      resize: true
     },
     modes: {
       grab: {
         distance: 400,
         line_linked: {
-          opacity: 1,
-        },
+          opacity: 1
+        }
       },
       bubble: {
         distance: 400,
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 3,
+        speed: 3
       },
       repulse: {
         distance: 200,
-        duration: 0.4,
+        duration: 0.4
       },
       push: {
-        particles_nb: 4,
+        particles_nb: 4
       },
       remove: {
-        particles_nb: 2,
-      },
-    },
+        particles_nb: 2
+      }
+    }
   },
-  retina_detect: true,
-};
+  retina_detect: true
+}
 
-export default particlesConfig;
+export default particlesConfig

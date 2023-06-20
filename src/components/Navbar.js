@@ -1,16 +1,16 @@
-import React from 'react';
-import { NavLink, Routes, Route } from 'react-router-dom';
-import '../styles/navbar.scss';
-import HomeIcon from '@mui/icons-material/Home';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
-import ContactPageRoundedIcon from '@mui/icons-material/ContactPageRounded';
-import Landing from '../pages/Landing';
-import About from '../pages/About';
-import Projects from '../pages/Projects';
-import Contact from '../pages/Contact';
+import React from 'react'
+import { NavLink, Routes, Route } from 'react-router-dom'
+import '../styles/navbar.scss'
+import HomeIcon from '@mui/icons-material/Home'
+import AssignmentIcon from '@mui/icons-material/Assignment'
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd'
+import ContactPageRoundedIcon from '@mui/icons-material/ContactPageRounded'
+import Landing from '../pages/Landing'
+import About from '../pages/About'
+import Projects from '../pages/Projects'
+import Contact from '../pages/Contact'
 
-function Navbar() {
+function Navbar () {
   return (
     <>
       <div className="nav">
@@ -60,7 +60,7 @@ function Navbar() {
         <Route path="/contactMe" element={<Contact />} />
       </Routes>
     </>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

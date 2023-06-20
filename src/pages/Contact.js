@@ -1,9 +1,9 @@
-import React from 'react';
-import ContactForm from '../components/ContactForm';
-import SocialMedia from '../components/SocialMedia';
-import '../styles/contact.scss';
+import React from 'react'
+import ContactForm from '../components/ContactForm'
+import SocialMedia from '../components/SocialMedia'
+import '../styles/contact.scss'
 
-function Contact() {
+function Contact () {
   return (
     <div className="contact animate">
       <div className="formContainer">
@@ -16,7 +16,7 @@ function Contact() {
         <ContactForm />
       </div>
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact
